@@ -7,6 +7,21 @@
           <%= link_to "Shop", root_path, class: 'text-gray-500 hover:underrline py-2 rounded-md text-md font-medium' %>
         </div>
        </div>
+      <div class="flex-shrink-0 flex items-center">
+        <%= link_to root_path do %>
+           <%= image_tag 'logo.jpeg', class: 'block lg-hidden h-20 w-auto' %>
+        <% end %>
+        <%= link_to root_path do %>
+          <%= image_tag 'logo.jpeg', class: 'hidden lg-block h-20 w-auto' %>
+       <% end %>
+      </div>
+      <div class="hidden sm:flex sm:ml-6 items-center justify-center">
+         <div class="flex space-x-10">
+            <%= link_to root_path, class: "text-gray-500 hover:underline y-2 eounded-md text-md font-medium" do %>
+              <%= icon 'fa-solid', 'shopping-cart' %>
+            <% end %>
+         </div>
+      </div>
      </div>
    </div>
   </div>
