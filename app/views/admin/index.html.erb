@@ -67,7 +67,7 @@
             <%= order.customer_email%>
           </td>
           <td class="px-6 py-4 border-b border-gray-200">
-          <%= order.created_at.strftime("%-d %b, %Y %H:%M") %>
+          <%= order.created_at.strftime("%b %-d, %Y %H:%M") %>
           </td>
           <td class="px-6 py-4 border-b border-gray-200">
             <%= (order.total/100.0).to_s %>
